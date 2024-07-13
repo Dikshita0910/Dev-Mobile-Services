@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary:indianred;
+    --secondary:rgba(15,10,29,0.849);
+    --light:#2f3640;
+}
+
+.nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    background: #353535;
+}
+
+.left{
+    font-size: 20px;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.right{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.right > a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.right > a:hover{
+    transform: scale(1.3);
+}
+
+.right i{
+    color: #FFF;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.nav2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width:769px){
+    .nav2{
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav2-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #353535;
+    font-size: 17px;
+    padding: 3rem 0;
+    gap: 5px;
+}
+
+.nav2-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #353535;
+    gap: 3px;
+    color: orangered;
+
+}
+
+.nav2-center h2{
+    font-size: 40px;
+}
+
+.nav2-center p{
+    font-size: 20px;
+}
+
+.nav2-center span, .nav2-center p{
+    color: #353535 !important;
+}
+
+.nav2-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #353535;
+    font-size: 17px;
+}
+
+
+
+.nav3 > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1rem 0;
+    background: rgba(53, 53, 53, 0.3);
+    padding: 1rem 0;
+}
+
+.nav3 > ul > li{
+    list-style: none;
+}
+
+.nav3 > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 5px;
+    color: #353535;
+    font-size: 17px;
+}
+
+.nav3 > ul > li > a > i{
+    font-size: 20px;
+    color: orangered;
+}
+
+.featured{
+    background:linear-gradient( to right, rgba(0,0,0,1) 20% , rgba(0,0,0,0.3)), url('6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 27rem;
+}
+
+.featured a{
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20;
+    padding: 2px 4px;
+    margin: 20px 0px;
+    top: 50px;
+    left: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    
+}
+
+.featured-text{
+    max-width: 500px;
+    position: absolute;
+    top:75%;
+    left:10%;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+
+.latest{
+    padding: 50px 100px;
+}
+
+.product-intro{
+    text-align: center;
+}
+
+.product-intro h1{
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.product-intro h1 span{
+    color: var(--secondary);
+}
+
+.product-intro p{
+    color: grey;
+    margin: 15px 0;
+}
+
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer; 
+    margin: 3rem 0;
+
+}
+
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+}
+
+.card img{
+    width: 80%;
+    transition: 0.5s ease-in-out;
+}
+
+.card i{
+    color:  goldenrod;
+    margin: 10px 0;
+}
+ 
+.card p i {
+    color: black;
+}
+
+.card button{
+    color: white;
+    background-color: var(--secondary);
+    border:none;
+    outline: none;
+    margin-top: 15;
+    padding: 5px 20px;
+}
+
+.card:hover img, .card:hover h1{
+    width: 70%;
+    color: var(--primary);
+}
+
+/* card-2 */
+
+.card-2 img{
+    width: 80%;
+    transition: 0.5s ease-in-out;
+}
+
+.card-2 i{
+    color:  goldenrod;
+    margin: 10px 0;
+}
+ 
+.card-2 p i {
+    color: black;
+}
+
+.card-2 button{
+    color: white;
+    background-color: var(--secondary);
+    border:none;
+    outline: none;
+    margin-top: 15;
+    padding: 5px 20px;
+}
+
+.card-2:hover img, .card-2:hover h1{
+    width: 70%;
+    color: var(--primary);
+}
+
+.card-container .card-2{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+} 
+
+.card-2::before{
+    content: "20% off";
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    padding: 0px 4px;
+    transform: rotate(-25deg);
+}
+
+.trends{
+    padding: 50px 100px;
+    background-color: rgba(0,0,0,0.01);
+}
+
+.trends .swiper {
+    width: 100%;
+    padding:50px;
+  }
+
+.trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 450px;
+  }
+
+.trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+}
+
+footer{
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5rem;
+}
+
+footer div{
+    flex-basis: 30%;
+}
+
+footer h2{
+    letter-spacing: 0.5rem;
+}
+
+footer h2 span{
+    color: var(--primary);
+}
+
+footer p{
+    font-size : 1rem;
+}
+
+footer i {
+    margin: 0px 4px;
+}
+
+
+@media only screen and (max-width:769px){
+
+    .nav1{
+       position: relative;
+       z-index: 2;
+       background-color: white;
+    }
+     
+    .right i{
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+
+    .nav2{
+        width: 100%;
+        height: 80px;
+    }
+    .nav2 .nav2-left i{
+        margin-left: 0px;
+    }
+    
+    .nav2 .nav2-center h2{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .nav2 .nav2-center p{
+        color: grey;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    
+    .nav2 .nav2-right i{
+        margin: 0px 5px;
+    }
+    
+    .nav3{
+        display: none;
+    }
+    
+
+    .latest{
+        padding: 0px 50px;
+    }
+    
+    .product-intro{
+        text-align: center;
+    }
+    
+    .product-intro h1{
+        color: var(--primary);
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    
+    .product-intro h1 span{
+        color: var(--secondary);
+    }
+    
+    .product-intro p{
+        color: grey;
+        margin: 15px 0;
+    }
+    
+    
+    .card-container{
+        margin: 1rem 0;
+    }
+    
+    .card-container .card{
+        flex-basis: 100%;
+        padding: 0.8rem;
+        text-align: center;
+        position: relative;
+        background: transparent;
+    }
+    
+    .card img{
+        width: 80%;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card i{
+        color:  goldenrod;
+        margin: 10px 0;
+    }
+     
+    .card p i {
+        color: black;
+    }
+    
+    .card button{
+        color: white;
+        background-color: var(--secondary);
+        border:none;
+        outline: none;
+        margin-top: 15;
+        padding: 5px 20px;
+    }
+    
+    .card:hover img, .card:hover h1{
+        width: 70%;
+        color: var(--primary);
+    }
+  
+
+    /* card-2 */
+    .card-container .card-2{
+        flex-basis: 100%;
+        padding: 0.8rem;
+        text-align: center;
+        position: relative;
+        
+    }
+    
+    .card-2 img{
+        width: 80%;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .card-2 i{
+        color:  goldenrod;
+        margin: 10px 0;
+    }
+     
+    .card-2 p i {
+        color: black;
+    }
+    
+    .card-2 button{
+        color: white;
+        background-color: var(--secondary);
+        border:none;
+        outline: none;
+        margin-top: 15;
+        padding: 5px 20px;
+    }
+    
+    .card-2:hover img, .card-2:hover h1{
+        width: 70%;
+        color: var(--primary);
+    }
+    
+    
+    .trends{
+        padding: 20px 50px;
+        background-color: rgba(0,0,0,0.01);
+    }
+    
+    .trends .swiper {
+        width: 100%;
+        padding:50px;
+      }
+    
+    .trends .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 360px;
+      }
+    
+    .trends .swiper-slide img {
+        display: block;
+        width: 100%;
+        
+    }
+    footer div{
+        flex-basis: 50%;
+        margin: 10px 0;
+    }
+    
+    
+
+
+}
